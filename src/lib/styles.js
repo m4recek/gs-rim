@@ -27,8 +27,8 @@ export function getContainerStyle(smallImage, userSpecifiedStyle) {
 
     const compositContainerStyle = objectAssign(
         { cursor: 'crosshair' },
-        priorityContainerStyle
-        userSpecifiedStyle,
+        priorityContainerStyle,
+        userSpecifiedStyle
     );
 
     return compositContainerStyle;
@@ -60,8 +60,8 @@ export function getSmallImageStyle(smallImage, style) {
 
     const compositSmallImageStyle = objectAssign(
         {},
-        style,
-        prioritySmallImageStyle
+        prioritySmallImageStyle,
+        style
     );
 
     return compositSmallImageStyle;
